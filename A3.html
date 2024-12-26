@@ -1,0 +1,27 @@
+<html>    
+</html>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      class student {
+        constructor(name){
+            this.studentname = name;
+        }
+        static master(){
+            return "I love Kungfu";
+        }
+        static fun(x){
+            return "I am "+x.studentname;
+        }
+        hi(){
+         return "Hi "+ this.studentname;
+        }
+      }
+      myname=new student("Dominic");
+      document.getElementById("demo").innerHTML=student.master();
+      document.getElementById("demo1").innerHTML = myname.hi(); 
+      document.getElementById("demo2").innerHTML = student.fun(myname);
+    </script>
+</body>
